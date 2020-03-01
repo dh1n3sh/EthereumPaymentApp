@@ -1,0 +1,79 @@
+body, html {
+  height: 100%;
+  font-family: monospace;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+  nav{
+    list-style-type: none;
+    margin: 0px 0.5px;
+    overflow: hidden;
+    background-color:#f2f2f2;
+    width:100%;
+  }
+
+  nav a{
+    float: left;
+    display: block;
+    padding: 15px 30px;
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  nav a:hover{
+    background-color: #33cc33;
+  }
+
+.bg-img {
+  background-image: url("img1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  left: 0;
+  margin: 100px 440px;
+  max-width: 400px;
+  padding: 16px;
+  background-color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: #33cc33;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 25px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
