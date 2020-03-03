@@ -10,7 +10,7 @@ var contract;
           {
             console.log(acc);
 			$('#address').html(acc[0]);
-            contract.methods.getBalanceOf(acc[0]).call({from:acc[0]}).then(function(bal){console.log(bal);$('#balance').html(bal)});});
+            contract.methods.getBalance().call({from:acc[0]}).then(function(bal){console.log(bal);$('#balance').html(bal)});});
             }
         );
         

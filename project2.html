@@ -4,6 +4,7 @@
 <head>
 	<title>Cryptocurrency</title>
 	<link rel="stylesheet" type="text/css" href="project2_css.css">
+	<link rel="stylesheet" type="text/css" href="nav.css">
 </head>
 
 <body>
@@ -11,36 +12,41 @@
 	<div class="bg-img">
 		<nav>
 			<a href="project1.html">home</a>
-			<a href="project2.html">transactions</a>
+			<a class="active" href="project2.html">transactions</a>
 			<a href="project3.html">transfer</a>
 			<a href="project4.html" style="float: right;">log out</a>
 			<br>
-			<label id="address" class='address'
-				style="margin-left: 800px; size:10px; font-size: 20px; color:black"></label>
+			
 		</nav>
+		<label id="address" class='address'
+				style="margin-left: 800px; size:10px; font-size: 20px; color:black"></label>
+		<div class="container">
+			<label>Balance : </label>
+			<label id="balance"> Balance not available </label>
+
+		</div>
 		<table id="table">
 			<tr>
-				<th>date</th>
-				<th>description</th>
-				<th>ref.</th>
-				<th>withdrawals</th>
-				<th>deposit</th>
-				<th>balance</th>
+				<!-- <th>date</th> -->
+				<th>Description</th>
+				<!-- <th>ref.</th> -->
+				<th>Transaction Amount</th>
+				<th>Transaction Type</th>
+				<!-- <th>balance</th> -->
 			</tr>
-			<tr>
+			<!-- <tr>
 				<td>hi</td>
 				<td>hello</td>
 				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
+
+			</tr> -->
 
 		</table>
 		<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="transactions.js">  </script>
 		<script src="contract.js"></script>
+		<script src="transactions.js">  </script>
+
 	</body>
 
 </html>

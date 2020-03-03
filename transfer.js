@@ -1,6 +1,7 @@
 var contract;
 
 //   var contract;
+
 function getBalance()
 {
     web3 = new Web3(web3.currentProvider);
@@ -11,7 +12,7 @@ function getBalance()
     {
         console.log(acc);
         $('#address').html(acc[0]);
-        contract.methods.getBalanceOf(acc[0]).call().then(
+        contract.methods.getBalance().call({from:acc[0]}).then(
             function(bal){
                 $('#balance').html(bal)
             }
@@ -32,7 +33,7 @@ $('#transfer').click(function()
         // $('#address').html(acc[0]);
         var to = $("#add").val();
         var amt = parseInt($("#amount").val());
-        contract.methods.sendElixir1(amt,to).send({from:acc[0]});
+        contract.methods.sendCoin(amt,to).send({from:acc[0]});
         }
     ).then(function(x){console.log(x)}).catch(function(x){console.log(x)});
     //   contract.methods.getBalance().call().then(function(bal){$('#balance').html(bal)});
