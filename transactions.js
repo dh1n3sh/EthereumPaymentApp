@@ -42,7 +42,7 @@ function setTable(c,acc)
     
 }
 web3.eth.getAccounts().then(function(acc)
-{   contract.methods.getTransactionCount().call().then(function(c)
+{   contract.methods.getTransactionCount().call({from:acc[0]}).then(function(c)
     {
         console.log(c);
         setTable(c-1,acc);
