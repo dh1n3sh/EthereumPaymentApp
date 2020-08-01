@@ -7,8 +7,7 @@ $(document).ready(function () {
   var holder;
   web3.eth.getAccounts().then(function (acc) {
     console.log(acc);
-    $('#address').html(acc[0]);
+    // $('#address').html(acc[0]);
     contract.methods.getBalance().call({ from: acc[0] }).then(function (bal) { console.log(bal); $('#balance').html(bal) });
   });
-}
-);
+});

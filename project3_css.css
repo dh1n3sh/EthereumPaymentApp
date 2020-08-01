@@ -1,6 +1,7 @@
 
 body,html{
 	height: 100%;
+	margin: 0px;
 }
 
 *{
@@ -20,10 +21,15 @@ body,html{
 .container{
 	position: absolute;
 	background-color: white;
-	margin:  92px 440px;
+	/* margin:  92px 440px; */
 	padding: 15px;
 	width: 40%;
 	border-radius: 8px;
+	margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 label{
