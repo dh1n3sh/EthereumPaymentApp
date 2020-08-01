@@ -1,5 +1,5 @@
 # EthereumPaymentApp
-You can view this dapp at http://dhinesh.ml/EthereumPaymentApp/  
+You can view this dapp at https://dh1n3sh.github.io/EthereumPaymentApp/  
 I have placed the code for the smart contract in [SmartContract](/SmartContract)  
 
   
