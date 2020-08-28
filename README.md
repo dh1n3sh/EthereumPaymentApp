@@ -1,5 +1,5 @@
 # EthereumPaymentApp
-You can view this dapp at https://dhinesh.ml/MoneyTransferDapp/transactions.html
+You can view this dapp at https://dhinesh.ml/MoneyTransferDapp/transactions.html   
 I have placed the code for the smart contract in [SmartContract](/SmartContract)  
 
   
